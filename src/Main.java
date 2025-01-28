@@ -163,3 +163,30 @@
 //        }
 //    }
 //}
+//Задание 5: Асинхронное чтение файла с использованием NIO.2
+//import java.io.IOException;
+//import java.nio.file.*;
+//import java.nio.channels.AsynchronousFileChannel;
+//import java.nio.ByteBuffer;
+//import java.util.concurrent.Future;
+//
+//public class AsyncFileReadExample {
+//    public static void main(String[] args) {
+//        Path path = Paths.get("asyncInput.txt");
+//
+//        try (AsynchronousFileChannel fileChannel = AsynchronousFileChannel.open(path, StandardOpenOption.READ)) {
+//            ByteBuffer buffer = ByteBuffer.allocate(1024);
+//            Future<Integer> result = fileChannel.read(buffer, 0);
+//
+//            while (!result.isDone()) {
+//            }
+//
+//            buffer.flip();
+//            byte[] data = new byte[buffer.remaining()];
+//            buffer.get(data);
+//            System.out.println("Содержимое файла: " + new String(data));
+//        } catch (IOException e) {
+//            System.err.println("Ошибка при чтении файла: " + e.getMessage());
+//        }
+//    }
+//}
