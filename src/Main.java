@@ -73,8 +73,6 @@
 //    }
 //}
 //
-//
-//
 //4. Проверка високосного года
 //Задача: Реализуйте метод, который принимает год и возвращает true, если он является високосным, и false в противном случае.
 //
@@ -95,12 +93,9 @@
 //    }
 //}
 //
-//
-//
 //5. Подсчет выходных за месяц
 //Задача: Напишите метод, который принимает месяц и год и возвращает количество выходных (суббот и воскресений) в этом месяце.
-//
-//        import java.time.DayOfWeek;
+//import java.time.DayOfWeek;
 //import java.time.LocalDate;
 //import java.time.Month;
 //
@@ -120,7 +115,7 @@
 //
 //    public static void main(String[] args) {
 //        int year = 2023;
-//        Month month = Month.APRIL; // Пример: апрель 2023 года
+//        Month month = Month.APRIL;
 //        int weekendCount = countWeekends(year, month);
 //        System.out.println("Количество выходных в " + month + " " + year + ": " + weekendCount);
 //    }
